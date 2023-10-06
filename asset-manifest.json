@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/b2019-pc/static/css/main.f4bc9de7.css",
-    "main.js": "/b2019-pc/static/js/main.45001c8b.js",
+    "main.css": "/b2019-pc/static/css/main.9019cd8c.css",
+    "main.js": "/b2019-pc/static/js/main.498f39b0.js",
     "static/js/787.9d40ff07.chunk.js": "/b2019-pc/static/js/787.9d40ff07.chunk.js",
     "static/media/bg_event.jpg": "/b2019-pc/static/media/bg_event.685a838e0c3be6c50223.jpg",
     "static/media/ac_5.png": "/b2019-pc/static/media/ac_5.a89d7d917de14211b00e.png",
@@ -50,12 +50,12 @@
     "static/media/event3.jpg": "/b2019-pc/static/media/event3.a269f64a5a957ebe8302.jpg",
     "static/media/bg_text_ac.png": "/b2019-pc/static/media/bg_text_ac.8a2fd9f5c7b9b1a0dc36.png",
     "index.html": "/b2019-pc/index.html",
-    "main.f4bc9de7.css.map": "/b2019-pc/static/css/main.f4bc9de7.css.map",
-    "main.45001c8b.js.map": "/b2019-pc/static/js/main.45001c8b.js.map",
+    "main.9019cd8c.css.map": "/b2019-pc/static/css/main.9019cd8c.css.map",
+    "main.498f39b0.js.map": "/b2019-pc/static/js/main.498f39b0.js.map",
     "787.9d40ff07.chunk.js.map": "/b2019-pc/static/js/787.9d40ff07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4bc9de7.css",
-    "static/js/main.45001c8b.js"
+    "static/css/main.9019cd8c.css",
+    "static/js/main.498f39b0.js"
   ]
 }
