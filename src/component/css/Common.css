@@ -1,0 +1,196 @@
+.modalOpen {
+  overflow-y: hidden;
+  padding-right: 8px;
+}
+.modalOpen .srchWrap {
+  padding-left: 8px;
+}
+
+#header {
+  line-height: 90px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+#header .wrapper {
+  width: 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+#header h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+#header h1 a {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 100px;
+  padding: 10px 0;
+}
+#header .directNumber {
+  color: #34b0dd;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+}
+#header .directNumber span {
+  margin-left: 5px;
+}
+#header .nav {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  position: relative;
+}
+#header .nav .wrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#header .nav .menuList {
+  line-height: 60px;
+  padding: 0 20px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+#header .nav .menuList:hover {
+  color: #34b0dd;
+  transition: 0.2s;
+}
+#header .nav .frmSrch {
+  display: block;
+  width: 50px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 30px;
+  color: #34b0dd;
+}
+#header .nav .srchForm {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  box-shadow: 5px 5px 10px 0px rgba(42, 42, 42, 0.2);
+}
+#header .nav .srchForm.fadeIn {
+  animation: fadeInAnimation 0.3s ease-in;
+  z-index: 3;
+}
+#header .nav .srchForm.fadeOut {
+  animation: fadeOutAnimation 0.3s ease-out;
+}
+#header .nav .srchWrap {
+  background: #fff;
+  width: 100%;
+  border-top: 1px solid #eee;
+  padding-bottom: 30px;
+}
+#header .nav .srchWrap .wrapper {
+  display: inherit;
+  text-align: center;
+}
+#header .nav .srchWrap h2 {
+  font-size: 24px;
+}
+#header .nav .srchWrap h2 span {
+  color: #34b0dd;
+}
+#header .nav .srchWrap #form {
+  border: 1px solid #34b0dd;
+  width: 70%;
+  height: 50px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+#header .nav .srchWrap .srchBtn {
+  background: #34b0dd;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+}
+#header .nav .srchWrap .recommend {
+  line-height: 25px;
+  font-size: 15px;
+}
+#header .nav .srchWrap .recommend strong {
+  padding: 0 50px;
+}
+#header .nav .srchWrap .recommend a:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: #454545;
+  margin: 0 10px;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+#footer {
+  background: #eee;
+  padding: 40px 0;
+}
+#footer .wrapper {
+  width: 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#footer .wrapper img {
+  margin-right: 80px;
+}
+#footer .wrapper ul {
+  display: flex;
+  padding: 10px 0;
+}
+#footer .wrapper ul li {
+  font-size: 15px;
+}
+#footer .wrapper ul li:not(:last-child)::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: #333;
+  margin: 0 10px;
+}
+#footer .wrapper address {
+  color: #333;
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#footer .wrapper address span {
+  line-height: 23px;
+}
+#footer .wrapper address span:not(:last-child, :nth-child(3))::after {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 1px;
+  background: #454545;
+  margin: 0 10px;
+}
+
+/*# sourceMappingURL=Common.css.map */

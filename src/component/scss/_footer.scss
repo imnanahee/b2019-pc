@@ -1,0 +1,54 @@
+@import 'utils';
+@import 'mixin';
+
+#footer {
+    background: $sub;
+    padding: 40px 0;
+
+    .wrapper {
+        @include wrapper ($display:flex);
+        align-items: center;
+
+        img {
+            margin-right: 80px;
+        }
+
+        ul {
+            display: flex;
+            padding: 10px 0;
+
+            li {
+                font-size: 15px;
+
+                &:not(:last-child)::after {
+                    content: '';
+                    display: inline-block;
+                    height: 10px;
+                    width: 1px;
+                    background: #333;
+                    margin: 0 10px;
+                }
+            }
+        }
+
+        address {
+            color: #333;
+            font-size: 15px;
+            display: flex;
+            flex-wrap: wrap;
+
+            span {
+                line-height: 23px;
+
+                &:not(:last-child, :nth-child(3))::after {
+                    content: '';
+                    display: inline-block;
+                    height: 10px;
+                    width: 1px;
+                    background: #454545;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,385 @@
+#main .intro {
+  text-align: center;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+#main .intro h3 {
+  font-size: 22px;
+  line-height: 45px;
+}
+#main .intro > span {
+  font-size: 14px;
+}
+#main .bannerWrap {
+  background: url("../images/bg_visual.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 880px;
+  text-align: center;
+  overflow: hidden;
+}
+#main .bannerWrap .wrapper {
+  width: 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: inherit;
+  width: 1100px;
+  min-width: 1100px;
+}
+#main .bannerWrap span {
+  color: #34b0dd;
+}
+#main .bannerWrap .subSlider {
+  overflow: hidden;
+  position: absolute;
+  top: 165px;
+  left: -880px;
+  width: 780px;
+  height: 520px;
+  z-index: 0;
+}
+#main .bannerWrap .subSlider .img {
+  display: block;
+  position: relative;
+}
+#main .bannerWrap .subSlider .img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+#main .mainSlider .img img {
+  box-shadow: 5px 5px 10px 0px rgba(42, 42, 42, 0.2);
+}
+#main .mainSlider .swiper-slide {
+  padding-bottom: 10.45%;
+}
+#main .mainSlider .swiper-slide .img {
+  display: block;
+  text-align: left;
+}
+#main .mainSlider .swiper-slide .productInfo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: right;
+  z-index: -1;
+}
+#main .mainSlider .swiper-slide .productInfo .comment {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  width: 220px;
+  word-break: keep-all;
+  text-align: left;
+  line-height: 32px;
+  padding: 20px;
+}
+#main .mainSlider .swiper-slide .productInfo .detailProduct {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  padding: 20px;
+  color: #fff;
+  font-size: 16px;
+}
+#main .swiperBtnWrap {
+  position: absolute;
+  right: 200px;
+  top: 135px;
+  width: 95px;
+  z-index: 1;
+  display: flex;
+}
+#main .swiperBtnWrap .swiperBtn {
+  border: 2px solid #34b0dd;
+  width: 45px;
+  height: 35px;
+  line-height: 35px;
+  color: #34b0dd;
+  cursor: pointer;
+}
+#main .swiperBtnWrap .prev {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-right: 1px;
+}
+#main .swiperBtnWrap .next {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+#main .gridVer__1 .__0 {
+  grid-row: 1/5;
+}
+#main .gridVer__1 .__0 img {
+  width: 350px;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+#main .gridVer__1 .__0 .productText {
+  bottom: 60px;
+}
+#main .gridVer__1 .__1 {
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+#main .gridVer__1 .__1 img {
+  width: 230px;
+}
+#main .gridVer__1 .__1 .productText {
+  bottom: 25px;
+}
+#main .gridVer__1 .__2 {
+  grid-row-start: 3;
+  grid-row-end: span 2;
+}
+#main .gridVer__1 .__2 img {
+  width: 230px;
+}
+#main .gridVer__1 .__2 .productText {
+  bottom: 25px;
+}
+#main .gridVer__1 .__3 {
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+#main .gridVer__1 .__3 img {
+  width: 350px;
+  box-sizing: border-box;
+}
+#main .gridVer__1 .__3 .productText {
+  bottom: 60px;
+}
+#main .gridVer__2 .__0 {
+  order: 1;
+  grid-row-start: 2;
+  grid-row-end: span 3;
+}
+#main .gridVer__2 .__0 img {
+  width: 350px;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+#main .gridVer__2 .__0 .productText {
+  bottom: 60px;
+}
+#main .gridVer__2 .__1 {
+  order: 2;
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+#main .gridVer__2 .__1 img {
+  width: 230px;
+}
+#main .gridVer__2 .__1 .productText {
+  bottom: 25px;
+}
+#main .gridVer__2 .__2 {
+  order: 3;
+  grid-row-start: 3;
+  grid-row-end: span 2;
+}
+#main .gridVer__2 .__2 img {
+  width: 230px;
+}
+#main .gridVer__2 .__2 .productText {
+  bottom: 25px;
+}
+#main .gridVer__2 .__3 {
+  order: 4;
+  grid-row: 1/5;
+}
+#main .gridVer__2 .__3 img {
+  width: 350px;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+#main .gridVer__2 .__3 .productText {
+  bottom: 60px;
+}
+#main .gridVer__2 button {
+  order: 0;
+}
+#main .productWrap {
+  margin-bottom: 100px;
+}
+#main .productWrap .wrapper {
+  width: 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: inherit;
+}
+#main .productWrap div[class*=Care] {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, 150px);
+  gap: 10px;
+  margin-bottom: 100px;
+}
+#main .productWrap div[class*=Care] .product {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+#main .productWrap div[class*=Care] .product:hover .detailInfo {
+  opacity: 1;
+  transition: 0.2s;
+}
+#main .productWrap .waterCare .product {
+  background-color: #d5e2ea;
+}
+#main .productWrap .waterCare button {
+  background-color: #7a99ab;
+}
+#main .productWrap .airCare .product {
+  background-color: #e2e5dc;
+}
+#main .productWrap .airCare button {
+  background: #8d9870;
+}
+#main .productWrap .bodyCare .product {
+  background-color: #e9e0db;
+}
+#main .productWrap .bodyCare button {
+  background-color: #a3907f;
+}
+#main .productWrap .sleepCare .product {
+  background-color: #e6e6e3;
+}
+#main .productWrap .sleepCare button {
+  background-color: #a09d98;
+}
+#main .productWrap .productText {
+  position: absolute;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+#main .productWrap .productText .desc {
+  color: #777;
+}
+#main .productWrap .productText .name {
+  font-size: 23px;
+  line-height: 35px;
+}
+#main .productWrap .productText .code {
+  font-size: 18px;
+  color: #555;
+}
+#main .productWrap .detailInfo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: table;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  opacity: 0;
+  transition: 0.2s;
+}
+#main .productWrap .detailInfo .rentalInfo {
+  display: table-cell;
+  vertical-align: middle;
+}
+#main .productWrap .detailInfo .price {
+  font-size: 22px;
+  line-height: 42px;
+}
+#main .productWrap .detailInfo pre {
+  line-height: 18px;
+  white-space: pre-wrap;
+}
+#main .productWrap button:hover span::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+#main .productWrap button svg {
+  display: block;
+  margin: 0 auto;
+}
+#main .productWrap button span {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 30px;
+  position: relative;
+}
+#main .productWrap button span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: -4px;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
+}
+#main .eventWrap {
+  text-align: center;
+  background: url("../images/bg_event.jpg") center;
+  background-size: cover;
+  height: 650px;
+  position: relative;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+#main .eventWrap .wrapper {
+  width: 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: inherit;
+}
+#main .eventWrap::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  height: 100px;
+}
+#main .eventWrap .listWrap {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+#main .eventWrap .eventList {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+#main .eventWrap .eventList img {
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+  transition: box-shadow 0.2s ease, border-radius 0.2s ease;
+}
+#main .eventWrap .eventList img:hover {
+  box-shadow: 5px 5px 10px 0px rgba(42, 42, 42, 0.2);
+  border-radius: 0 30px 0 30px;
+}
+#main .eventWrap .textWrap {
+  position: absolute;
+  width: 100%;
+  bottom: 80px;
+}
+#main .eventWrap .textWrap p {
+  font-size: 15px;
+  padding: 10px 0;
+}
+#main .eventWrap .textWrap h4 {
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=main.css.map */

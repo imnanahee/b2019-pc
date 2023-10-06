@@ -1,0 +1,177 @@
+@import 'utils';
+@import 'mixin';
+
+.modalOpen {
+    overflow-y: hidden;
+    padding-right: 8px;
+
+    .srchWrap {
+        padding-left: 8px;
+    }
+
+}
+
+#header {
+    line-height: 90px;
+    border-bottom: 1px solid $sub;
+    background-color: $white;
+
+    .wrapper {
+        @include wrapper ($display: flex);
+    }
+
+    h1 {
+        flex-grow: 1;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            box-sizing: border-box;
+            height: 100px;
+            padding: 10px 0;
+        }
+    }
+
+    .directNumber {
+        color: $main;
+        font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+        right: 0;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+    
+    .nav {
+        border-top: 1px solid $sub;
+        background-color: $white;
+        position: relative;
+
+        .wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .menuList {
+            line-height: 60px;
+            padding: 0 20px;
+            font-weight: 500;
+            transition: $delay;
+
+            &:hover {
+                color: $main;
+                transition: $delay;
+            }
+        }
+
+        .frmSrch {
+            display: block;
+            width: 50px;
+            height: 60px;
+            line-height: 60px;
+            cursor: pointer;
+            text-align: center;
+            margin-left: 30px;
+            color: $main;
+        }
+
+        .srchForm {
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            box-shadow: 5px 5px 10px 0px rgba(42, 42, 42, 0.2);
+            
+            // &.on {
+            //     opacity: 1;
+            //     z-index: 3;
+            //     transition: opacity $delay linear;
+            // }
+
+            &.fadeIn {
+                animation: fadeInAnimation 0.3s ease-in;
+                z-index: 3;
+            }
+
+            &.fadeOut {
+                animation: fadeOutAnimation 0.3s ease-out;
+            }
+        }
+
+        .srchWrap {
+            background: $white;
+            width: 100%;
+            border-top: 1px solid $sub;
+            padding-bottom: 30px;
+
+            .wrapper {
+                display: inherit;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 24px;
+                
+                span {
+                    color: $main;
+                }
+            }
+
+            #form {
+                border: 1px solid $main;
+                width: 70%;
+                height: 50px;
+                padding: 0 20px;
+                box-sizing: border-box;
+                font-size: 18px;
+            }
+
+            .srchBtn {
+                background: $main;
+                color: $white;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                display: inline-block;
+            }
+
+            .recommend {
+                line-height: 25px;
+                font-size: 15px;
+
+                strong {
+                    padding: 0 50px;
+                }
+
+                a:not(:last-child)::after {
+                    content: "";
+                    display: inline-block;
+                    height: 10px;
+                    width: 1px;
+                    background: #454545;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutAnimation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,318 @@
+.detailView {
+  background-color: #f1f3f4;
+}
+.detailView .wrapper {
+  width: 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+  position: relative;
+  display: inherit;
+}
+.detailView img {
+  width: 550px;
+}
+.detailView .cell {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.detailView .productText {
+  padding: 20px;
+  box-sizing: border-box;
+  width: 450px;
+}
+.detailView .productText h4 {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.detailView .productText .category {
+  margin: 0 5px 20px 0;
+  display: inline-block;
+}
+.detailView .productText .state {
+  font-weight: bold;
+  font-size: 14.5px;
+  display: inline-block;
+  line-height: 27px;
+}
+.detailView .productText .state span:last-child {
+  color: #34b0dd;
+}
+.detailView h5 {
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+.detailView .area {
+  position: absolute;
+  bottom: 15px;
+  font-size: 14px;
+  text-align: right;
+}
+.detailView .typeInner {
+  border-radius: 5px;
+}
+.detailView .boxWrap {
+  background-color: #f1f3f4;
+  border-radius: 5px;
+}
+.detailView .totalPrice {
+  position: relative;
+  line-height: 20px;
+  margin: 15px 5px 8px;
+}
+.detailView .totalPrice div {
+  float: right;
+}
+.detailView .totalPrice div.discount {
+  margin-left: 5px;
+}
+.detailView .totalPrice i {
+  display: none;
+  font-style: normal;
+  text-decoration: line-through;
+  color: #999;
+  line-height: 25px;
+}
+.detailView .totalPrice p {
+  display: none;
+  float: right;
+  font-size: 13px;
+  font-weight: 500;
+  color: #34b0dd;
+}
+.detailView .totalPrice p strong {
+  font-size: 20px;
+}
+.detailView .totalPrice .on {
+  display: block;
+}
+.detailView .grade {
+  background-color: #fff;
+  border: 1px solid #1b2529;
+  color: #1b2529;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 15px;
+  text-align: center;
+}
+.detailView .infoTop {
+  background-color: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.detailView .mattress .inBox {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 0;
+  position: relative;
+}
+.detailView .mattress .inBox span {
+  width: calc(100% - 189px);
+}
+.detailView .mattress .inBox .area {
+  right: 0;
+}
+.detailView .colorType {
+  margin-top: 10px;
+}
+.detailView .colorList {
+  display: flex;
+  float: right;
+}
+.detailView .colorList p {
+  display: none;
+  font-size: 14px;
+}
+.detailView .colorList p.on {
+  display: block;
+}
+.detailView .selectBtn {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #d6d6d6;
+  border: 2px solid #d6dde0;
+  margin-top: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.detailView .selectBtn:nth-child(odd) {
+  margin-right: 10px;
+}
+.detailView .selectBtn.on {
+  color: #1b2529;
+  border-color: #1b2529;
+  font-weight: 600;
+}
+.detailView .infoBottom {
+  margin-top: 20px;
+}
+.detailView .infoBottom h5 svg {
+  padding-left: 5px;
+  color: #bcbcbc;
+  cursor: pointer;
+}
+.detailView .infoBottom .inBox {
+  padding: 15px;
+  position: relative;
+}
+.detailView .infoBottom .inBox.hidden {
+  display: none;
+}
+.detailView .infoBottom .inBox select {
+  float: right;
+  border: 1px solid #1b2529;
+  background: #fff;
+  vertical-align: top;
+  width: 100%;
+  border-radius: 5px;
+  height: 35px;
+  padding: 0 10px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.detailView .infoBottom .inBox span {
+  width: calc(100% - 177px);
+}
+.detailView .infoBottom .area {
+  right: 15px;
+}
+.detailView .tabMenu {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  line-height: 40px;
+}
+.detailView .tabMenu li {
+  width: 100%;
+  text-align: center;
+  background: #495154;
+  border-bottom: 2px solid #1b2529;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+.detailView .tabMenu li:first-child {
+  border-top-left-radius: 5px;
+}
+.detailView .tabMenu li:first-child.on {
+  border-width: 2px 0 0 2px;
+}
+.detailView .tabMenu li:first-child.on::after {
+  content: "";
+  background: #fff;
+  width: 15px;
+  position: absolute;
+  height: 44px;
+  top: 0;
+  z-index: 1;
+  border-right: 2px solid #1b2529;
+  right: -3px;
+  transform: skewX(10deg);
+}
+.detailView .tabMenu li:last-child {
+  border-top-right-radius: 5px;
+}
+.detailView .tabMenu li:last-child.on {
+  border-width: 2px 2px 0 0;
+}
+.detailView .tabMenu li:last-child.on::after {
+  content: "";
+  background: #fff;
+  width: 15px;
+  position: absolute;
+  height: 44px;
+  top: 0;
+  z-index: 1;
+  border-left: 2px solid #1b2529;
+  left: -3px;
+  transform: skewX(-10deg);
+}
+.detailView .tabMenu li.on {
+  border: solid #1b2529;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #fff;
+  position: relative;
+  top: -5px;
+  height: 48px;
+  color: #1b2529;
+}
+.detailView .componentSelect {
+  float: right;
+  width: 75%;
+}
+.detailView .componentList {
+  display: none;
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 114px);
+  background: #fff;
+  padding: 0 10px;
+  border: 1px solid #1b2529;
+  border-radius: 5px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.detailView .componentList.on {
+  display: block;
+  margin-bottom: 15px;
+}
+.detailView .componentList li {
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+.detailView .noSelected {
+  position: relative;
+  width: 100%;
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: block;
+  font-size: 14px;
+  cursor: pointer;
+}
+.detailView .noSelected svg {
+  float: right;
+  margin-right: 5px;
+}
+.detailView #buyType1 {
+  display: none;
+  background-color: #fff;
+  border: solid #1b2529;
+  border-width: 0 2px 2px 2px;
+  padding: 20px 20px 15px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.detailView #buyType1.on {
+  display: block;
+}
+.detailView #buyType2 {
+  display: none;
+  background-color: #fff;
+  border: solid #1b2529;
+  border-width: 0 2px 2px 2px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px 20px 15px;
+  box-sizing: border-box;
+}
+.detailView #buyType2.on {
+  display: block;
+}
+
+/*# sourceMappingURL=detail.css.map */

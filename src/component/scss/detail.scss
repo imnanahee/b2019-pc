@@ -1,0 +1,391 @@
+@import 'utils';
+@import 'mixin';
+
+.detailView {
+    background-color: $goods;
+
+    .wrapper {
+        @include wrapper ($display: inherit);
+    }
+
+    img {
+        width: 550px;
+    }
+
+    .cell {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+
+    .productText {
+        padding: 20px;
+        box-sizing: border-box;
+        width: 450px;
+
+        h4 {
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+
+        .category {
+            margin: 0 5px 20px 0;
+            display: inline-block;
+        }
+
+        .state {
+            font-weight: bold;
+            font-size: 14.5px;
+            display: inline-block;
+            line-height: 27px;
+
+            span:last-child {
+                color: $main;
+            }
+
+            // span:first-child::after {
+            //     content: '';
+            //     display: inline-block;
+            //     width: 3px;
+            //     height: 3px;
+            //     background: #333;
+            //     border-radius: 50%;
+            //     vertical-align: middle;
+            //     margin: 0 4px;
+            // }
+
+            // span:first-child {
+            //     margin-right: 5px;
+            // }
+
+        }
+    }
+
+    h5 {
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+    }
+
+    .area {
+        position: absolute;
+        bottom: 15px;
+        font-size: 14px;
+        text-align: right;
+    }
+
+    .typeInner {
+        border-radius: $radius;
+    }
+
+    .boxWrap {
+        background-color: $goods;
+        border-radius: $radius;
+    }
+
+    .totalPrice {
+        position: relative;
+        line-height: 20px;
+        margin: 15px 5px 8px;
+
+        div {
+            float: right;
+
+            &.discount {
+                margin-left: 5px;
+            }
+        }
+
+        i {
+            display: none;
+            font-style: normal;
+            text-decoration: line-through;
+            color: #999;
+            line-height: 25px;
+        }
+
+        p {
+            display: none;
+            float: right;
+            font-size: 13px;
+            font-weight: 500;
+            color: $main;
+
+            strong {
+                font-size: 20px;
+            }
+        }
+
+        .on {
+            display: block;
+        }
+    }
+
+    .grade {
+        background-color: $white;
+        border: 1px solid #1b2529;
+        color: #1b2529;
+        font-weight: 600;
+        border-radius: $radius;
+        font-size: 15px;
+        padding: 10px;
+        margin: 15px;
+        text-align: center;
+    }
+    
+    .infoTop {
+        background-color: $white;
+        padding: 25px;
+        box-sizing: border-box;
+        border-radius: $radius;
+    }
+
+    .mattress {
+        .inBox {
+            border-top: 1px solid #e0e0e0;
+            padding: 15px 0;
+            position: relative;
+
+            span {
+                width: calc(100% - 189px);
+            }
+
+            .area {
+                right: 0;
+            }
+        }
+    }
+
+    .colorType {
+        margin-top: 10px;
+    }
+
+    .colorList {
+        display: flex;
+        float: right;
+
+        p {
+            display: none;
+            font-size: 14px;
+
+            &.on {
+                display: block;
+            }
+        }
+    }
+
+    .selectBtn {
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        background: #fff;
+        font-size: 14px;
+        border-radius: $radius;
+        color: #d6d6d6;
+        border: 2px solid #d6dde0;
+        margin-top: 15px;
+        transition: $delay;
+        cursor: pointer;
+
+        &:nth-child(odd) {
+            margin-right: 10px;
+        }
+
+        &.on {
+            color: $border;
+            border-color: $border;
+            font-weight: 600;
+        }
+    }
+
+    .infoBottom {
+        margin-top: 20px;
+
+        h5 svg {
+            padding-left: 5px;
+            color: #bcbcbc;
+            cursor: pointer;
+        }
+
+        .inBox {
+            padding: 15px;
+            position: relative;
+    
+            &.hidden {
+                display: none;
+            }
+    
+            select {
+                float: right;
+                border: 1px solid $border;
+                background: #fff;
+                vertical-align: top;
+                width: 100%;
+                border-radius: $radius;
+                height: 35px;
+                padding: 0 10px;
+                line-height: 35px;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+    
+            span {
+                width: calc(100% - 177px);
+            }
+        }
+
+        .area {
+            right: 15px;
+        }
+    }
+
+    .tabMenu {
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        line-height: 40px;
+
+        li {
+            width: 100%;
+            text-align: center;
+            background: #495154;
+            border-bottom: 2px solid $border;
+            position: relative;
+            font-size: 15px;
+            font-weight: 600;
+            color: $white;
+            cursor: pointer;
+
+            &:first-child {
+                border-top-left-radius: 5px;
+
+                &.on {
+                    border-width: 2px 0 0 2px;
+
+                    &::after {
+                        @include afterLine;
+                        border-right: 2px solid $border;
+                        right: -3px;
+                        transform: skewX(10deg);
+                    }
+                }
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+
+                &.on {
+                    border-width: 2px 2px 0 0;
+
+                    &::after {
+                        @include afterLine;
+                        border-left: 2px solid $border;
+                        left: -3px;
+                        transform: skewX(-10deg);
+                    }
+                }
+            }
+
+            &.on {
+                border: solid $border;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background: $white;
+                position: relative;
+                top: -5px;
+                height: 48px;
+                color: #1b2529;
+
+            }
+        }
+    }
+
+    .componentSelect {
+        float: right;
+        width: calc(100% - 25%);
+    }
+
+    .componentList {
+        display: none;
+        position: absolute;
+        top: 10px;
+        width: calc(100% - 114px);
+        background: $white;
+        padding: 0 10px;
+        border: 1px solid $border;
+        border-radius: $radius;
+        box-sizing: border-box;
+        z-index: 1;
+
+        &.on {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        li {
+            height: 40px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+    }
+
+    .noSelected {
+        position: relative;
+        width: 100%;
+        padding-left: 10px;
+        box-sizing: border-box;
+        display: block;
+        font-size: 14px;
+        cursor: pointer;
+
+        // &.on {
+        //     height: 40px;
+        //     background: $white;
+        //     padding: 10px;
+        //     box-sizing: border-box;
+        //     border: 1px solid $border;
+        //     border-bottom: none;
+        //     border-top-left-radius: 5px;
+        //     border-top-right-radius: 5px;
+        // }
+
+        svg {
+            float: right;
+            margin-right: 5px;
+        }
+    }
+
+    #buyType1 {
+        display: none;
+        background-color: $white;
+        border: solid $border;
+        border-width: 0 2px 2px 2px;
+        padding: 20px 20px 15px;
+        box-sizing: border-box;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        &.on {
+            display: block;
+        }
+    }
+
+    #buyType2 {
+        display: none;
+        background-color: $white;
+        border: solid $border;
+        border-width: 0 2px 2px 2px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 20px 20px 15px;
+        box-sizing: border-box;
+
+        &.on {
+            display: block;
+        }
+    }
+
+}
